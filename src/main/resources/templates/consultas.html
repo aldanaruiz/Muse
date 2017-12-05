@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html 	lang="en"
+		xmlns:th="http://www.thymeleaf.org"
+		xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+		layout:decorator="layout">
+				<div class="container" layout:fragment="contenido">
+					<div class="row">
+						<div class="col-6"  th:each="consulta:${listaConsultas}">
+							<p th:text="${consulta.nombre}"></p>
+							<p th:text="${consulta.email}"></p>
+							<p th:text="${consulta.consulta}"></p>
+						</div>
+					</div>
+
+
+				</div>
+				
+				
+				
+			
+</html>

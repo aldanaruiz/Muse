@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html 	lang="en"
+		xmlns:th="http://www.thymeleaf.org"
+		xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+		layout:decorator="layout">
+
+
+    <meta charset="utf-8"></meta>
+    <div class="container" layout:fragment="contenido">
+    <h1>Stock General</h1>
+    	<ul>
+			<li th:each="stock:${listaStock}">
+				<label>Mes:</label><p th:text="${stock.mes}"></p>
+				<label>Total:</label><p th:text="${stock.total}"></p>
+				<label>Series:</label><p th:text="${stock.series}"></p>
+				<label>Bandas: </label><p th:text="${stock.bandas}"></p>
+			</li>
+		</ul>
+		
+    </div>
+   
+	
+</html>

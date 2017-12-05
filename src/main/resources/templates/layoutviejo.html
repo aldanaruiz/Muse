@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+	<head>
+		<script src="/jquery-3.2.1.js"></script>
+		<script src="/bootstrap.bundle.js"></script>
+		<link rel="stylesheet" type="text/css" href="/bootstrap.css"></link>
+		<link rel="stylesheet" type="text/css" href="/estilo.css"></link>
+		<link href="https://fonts.googleapis.com/css?family=Ropa+Sans" rel="stylesheet"></link>
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="jumbotron" id="fondo">
+					  <h1 class="display-3">Heladeria Alberto</h1>
+					  <h2>Helados Artesanales</h2>
+					  <h2 class="my-4"></h2>
+					  <h4>"Ofrecemos una selecta variedad de sabores para deleitar el paladar de nuestros clientes"</h4>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+					<ul class="nav nav-tabs" >
+					  <li class="nav-item">
+					    <a class="nav-link" th:classappend="${claseHome}" href="/">Home</a>
+					  </li>
+					  <li class="nav-item">
+					    <a class="nav-link" th:classappend="${claseNosotros}" href="/nosotros">Nosotros</a>
+					  </li>
+					  <li class="nav-item">
+					    <a class="nav-link" th:classappend="${claseSabores}" href="/sabores">Sabores</a>
+					  </li>
+					  <li class="nav-item">
+					    <a class="nav-link " th:classappend="${claseSucursales}" href="/sucursales">Sucursales</a>
+					  </li>
+					   <li class="nav-item">
+					    <a class="nav-link" th:classappend="${claseContacto}" href="/contacto">Contacto</a>
+					  </li>
+					</ul>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-4">
+					<ul class="nav flex-column">
+					  <li class="nav-item">
+					    <a class="nav-link" th:classappend="${claseHome}" href="/">Home</a>
+					  </li>
+					  <li class="nav-item">
+					    <a class="nav-link" th:classappend="${claseNosotros}" href="/nosotros">Nosotros</a>
+					  </li>
+					  <li class="nav-item">
+					    <a class="nav-link"  th:classappend="${claseSabores}" href="/sabores">Sabores</a>
+					  </li>
+					  <li class="nav-item">
+					    <a class="nav-link"  th:classappend="${claseSucursales}" href="/sucursales">Sucursales</a>
+					  </li>
+					   <li class="nav-item">
+					    <a class="nav-link" th:classappend="${claseContacto}" href="/contacto">Contacto</a>
+					  </li>
+					</ul>
+				</div>
+				<div class="col-8" layout:fragment="contenido">
+					<h1> Heladeria Alberto </h1>
+					<p>Desde 1964 nos encontramos en el corazón de Montserrat 
+					brindando los más deliciosos helados artesanales.
+					Contamos con 47 años de experiencia en la fabricación de cremas heladas 
+					con la típica tradición argentina,con delicada consistencia 
+					y realizadas utilizando materias primas naturales de altísima calidad.
+					Ofrecemos una selecta variedad de sabores para deleitar el paladar de nuestros clientes</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col" align="center">
+					<a href="http://www.facebook.com"><img src="/facebooklogo.jpg" class="imgredonda "></img></a>
+					<a href="http://www.twitter.com" ><img src="/twitterlogo.jpg" class="imgredonda "></img></a>
+					<a href="http://www.instagram.com"><img src="/instagramlogo.jpg" class="imgredonda"></img></a>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,44 @@
+p{
+	text-align:center;
+	color: #fff;
+}
+h1{
+	color: #fff;
+	text-align: center;
+}
+h2{
+	font-size:150%;
+	text-align:center;
+	color: #fff;
+}
+h4{
+	text-align:center;
+	color: #fff;
+}
+#fondo{
+	background-image: url("/helados.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	
+}
+body{
+	background-color: #000;
+}
+a{
+	color:#fff;
+}
+a:hover{
+	color:red;
+}
+body{
+	font-family: 'Ropa Sans', sans-serif;
+}
+.imgredonda{
+	height:100px;
+	width:100px;
+	border-radius:50%;
+	background-position:50%;
+	background-repeat: no-repeat;
+	background-size:100% auto;
+	padding:10px;
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html 	lang="en"
+		xmlns:th="http://www.thymeleaf.org"
+		xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+		layout:decorator="layout">
+
+
+    <meta charset="utf-8"></meta>
+    <div class="container" layout:fragment="contenido">
+    <h1>Stock Remeras</h1>
+    	<ul>
+			<li th:each="remera:${listaRemeras}">
+				<label>Nombre:</label><p th:text="${remera.nombre}"></p>
+				<label>Diseño:</label><p th:text="${remera.diseño}"></p>
+				<label>Categoria:</label><p th:text="${remera.categoria}"></p>
+				<label>Stock:</label><p th:text="${remera.stock}"></p>
+			</li>
+		</ul>
+		
+    </div>
+   
+	
+</html>

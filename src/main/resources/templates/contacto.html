@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html 	lang="en"
+		xmlns:th="http://www.thymeleaf.org"
+		xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+		layout:decorator="layout">
+
+    
+    <div class="container" layout:fragment="contenido">
+    	<div class="span9">
+					    
+						<h3> Consultanos</h3>	
+						<hr class="soft"/>
+						
+						<div class="row">
+							<div class="span1"> &nbsp;</div>
+							<div class="span4">
+								<div class="well">
+								<p th:text="${mensajeError}"></p>	
+								<h5>Ingresá tus datos para poder mandarte la información.</h5>
+								<form action="/recibirConsulta" method="post">
+								<div class="control-group">
+									<label class="control-label">Nombre</label>
+									<div class="controls">
+									  <input class="span3"  type="text" name="nombre" placeholder="Nombre" th:value="${nombreAnterior}"></input>
+									</div>
+								  </div>
+								  <div class="control-group">
+									<label class="control-label" for="inputEmail">Email</label>
+									<div class="controls">
+									  <input class="span3"  type="text" name="email" placeholder="Email" th:value="${emailAnterior}"></input>
+									</div>
+								  </div>
+								  <div class="control-group">
+									<label class="control-label">Consulta</label>
+									<div class="controls">
+									  <input  class="span3" name="consulta" placeholder="Tu consulta" th:value="${consultaAnterior}"></input>
+									</div>
+								  </div>
+								  <div class="control-group">
+									<div class="controls">
+									  <button type="submit" class="defaultBtn">Enviar</button> 
+
+									</div>
+								  </div>
+								</form>
+							</div>
+							</div>
+						</div>	
+						
+					</div>
+										
+				</div>
+    
+   
+	
+</html>
